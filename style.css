@@ -1,0 +1,80 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    background-color: #e6e2d3;
+    width: 50rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: #dac292;
+    border-radius: 0.5rem;
+}
+
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.dogs {
+    flex-basis: 60%;
+}
+
+select {
+    flex-basis: 20%;
+    align-self: flex-start;
+    border: 2px solid #c4b7a6;
+    border-radius: 3rem;
+    padding-left: 1rem;
+    outline: none;
+    background-color: #b9936c;
+    cursor: pointer;
+}
+
+
+img {
+    max-inline-size: 100%;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+        }
+}
+
+.spinner {
+    font-size: 3rem;
+    text-align: center;
+    animation: 3s spin infinite;
+    display: none;
+}
+
+.spinner img {
+    width: 10rem;
+    border-radius: 5rem;
+}
+
+.dog-img {
+    display: none;
+}
+
+.show {
+    display: block;
+}
